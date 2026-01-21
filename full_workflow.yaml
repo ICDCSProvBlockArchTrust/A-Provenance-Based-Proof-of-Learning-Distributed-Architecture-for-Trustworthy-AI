@@ -1,0 +1,223 @@
+
+entities:
+  pretrain_energy:
+    src: imgs/energy_pretraining.png
+  pretrain_time:
+    src: imgs/time_pretraining.png
+  finetuning_energy:
+    src: imgs/energy_finetuning.png
+  finetuning_time:
+    src: imgs/time_finetuning.png
+  validation_loss_pretraining: 
+    src: imgs/validation_loss_pretraining.png
+  validation_loss_finetuning: 
+    src: imgs/validation_loss_finetuning.png
+
+tasks:
+  - id: pretrain_DoubleAttention
+    label: "Pretrain DoubleAttention Vision Transformer"
+    attributes: 
+      - context: "training"
+    inputs: []
+    outputs:
+      - "pretrained_DoubleAttention_ViT"
+  - id: pretrain_SEAttention
+    label: "Pretrain SEAttention Vision Transformer"
+    attributes: 
+      - context: "training"
+    inputs: []
+    outputs:
+      - "pretrained_SEAttention_ViT"
+  # - id: pretrain_SimAM
+  #   label: "Pretrain SimAM Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_SimAM_ViT"
+  # - id: pretrain_MobileViTv2Attention
+  #   label: "Pretrain MobileViTv2Attention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_MobileViTv2Attention_ViT"
+  # - id: pretrain_CoordAtt
+  #   label: "Pretrain CoordAtt Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_CoordAtt_ViT"
+  # - id: pretrain_CrissCrossAttention
+  #   label: "Pretrain CrissCrossAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_CrissCrossAttention_ViT"
+  # - id: pretrain_SKAttention
+  #   label: "Pretrain SKAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_SKAttention_ViT"
+  # - id: pretrain_ImageLinearAttention
+  #   label: "Pretrain ImageLinearAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: []
+  #   outputs:
+  #     - "pretrained_ImageLinearAttention_ViT"
+
+  - id: compare_pretrain_energy
+    label: "Compare energy consumed during all ViTs pretraining"
+    attributes: []
+    inputs: 
+      - "pretrained_DoubleAttention_ViT"
+      - "pretrained_SEAttention_ViT"
+      # - "pretrained_SimAM_ViT"
+      # - "pretrained_MobileViTv2Attention_ViT"
+      # - "pretrained_CoordAtt_ViT"
+      # - "pretrained_CrissCrossAttention_ViT"
+      # - "pretrained_SKAttention_ViT"
+      # - "pretrained_ImageLinearAttention_ViT"
+    outputs:
+      - pretrain_energy
+  - id: compare_pretrain_time
+    label: "Compare time taken during all ViTs pretraining"
+    attributes: []
+    inputs: 
+      - "pretrained_DoubleAttention_ViT"
+      - "pretrained_SEAttention_ViT"
+      # - "pretrained_SimAM_ViT"
+      # - "pretrained_MobileViTv2Attention_ViT"
+      # - "pretrained_CoordAtt_ViT"
+      # - "pretrained_CrissCrossAttention_ViT"
+      # - "pretrained_SKAttention_ViT"
+      # - "pretrained_ImageLinearAttention_ViT"
+    outputs:
+      - pretrain_time
+  - id: compare_pretrain_validation_loss
+    label: "Compare validation losses collecred during all ViTs pretraining"
+    attributes: []
+    inputs: 
+      - "pretrained_DoubleAttention_ViT"
+      - "pretrained_SEAttention_ViT"
+      # - "pretrained_SimAM_ViT"
+      # - "pretrained_MobileViTv2Attention_ViT"
+      # - "pretrained_CoordAtt_ViT"
+      # - "pretrained_CrissCrossAttention_ViT"
+      # - "pretrained_SKAttention_ViT"
+      # - "pretrained_ImageLinearAttention_ViT"
+    outputs:
+      - "validation_loss_pretraining"
+
+  - id: finetune_DoubleAttention
+    label: "Finetuning DoubleAttention Vision Transformer"
+    attributes: 
+      - context: "training"
+    inputs: 
+      - "pretrained_DoubleAttention_ViT"
+    outputs:
+      - "finetuned_DoubleAttention_ViT"
+  - id: finetune_SEAttention
+    label: "Finetuning SEAttention Vision Transformer"
+    attributes: 
+      - context: "training"
+    inputs: 
+      - "pretrained_SEAttention_ViT"
+    outputs:
+      - "finetuned_SEAttention_ViT"
+  # - id: finetune_SimAM
+  #   label: "Finetuning SimAM Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_SimAM_ViT"
+  #   outputs:
+  #     - "finetuned_SimAM_ViT"
+  # - id: finetune_MobileViTv2Attention
+  #   label: "Finetuning MobileViTv2Attention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_MobileViTv2Attention_ViT"
+  #   outputs:
+  #     - "finetuned_MobileViTv2Attention_ViT"
+  # - id: finetune_CoordAtt
+  #   label: "Finetuning CoordAtt Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_CoordAtt_ViT"
+  #   outputs:
+  #     - "finetuned_CoordAtt_ViT"
+  # - id: finetune_CrissCrossAttention
+  #   label: "Finetuning CrissCrossAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_CrissCrossAttention_ViT"
+  #   outputs:
+  #     - "finetuned_CrissCrossAttention_ViT"
+  # - id: finetune_SKAttention
+  #   label: "Finetuning SKAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_SKAttention_ViT"
+  #   outputs:
+  #     - "finetuned_SKAttention_ViT"
+  # - id: finetune_ImageLinearAttention
+  #   label: "Finetuning ImageLinearAttention Vision Transformer"
+  #   attributes: 
+  #     - context: "training"
+  #   inputs: 
+  #     - "pretrained_ImageLinearAttention_ViT"
+  #   outputs:
+  #     - "finetuned_ImageLinearAttention_ViT"
+
+  - id: compare_finetuning_energy
+    label: "Compare energy consumed during all ViTs finetuning"
+    attributes: []
+    inputs: 
+      - "finetuned_DoubleAttention_ViT"
+      - "finetuned_SEAttention_ViT"
+      # - "finetuned_SimAM_ViT"
+      # - "finetuned_MobileViTv2Attention_ViT"
+      # - "finetuned_CoordAtt_ViT"
+      # - "finetuned_CrissCrossAttention_ViT"
+      # - "finetuned_SKAttention_ViT"
+      # - "finetuned_ImageLinearAttention_ViT"
+    outputs:
+      - finetuning_energy
+  - id: compare_finetuning_time
+    label: "Compare time taken during all ViTs finetuning"
+    attributes: []
+    inputs: 
+      - "finetuned_DoubleAttention_ViT"
+      - "finetuned_SEAttention_ViT"
+      # - "finetuned_SimAM_ViT"
+      # - "finetuned_MobileViTv2Attention_ViT"
+      # - "finetuned_CoordAtt_ViT"
+      # - "finetuned_CrissCrossAttention_ViT"
+      # - "finetuned_SKAttention_ViT"
+      # - "finetuned_ImageLinearAttention_ViT"
+    outputs:
+      - finetuning_time
+  - id: compare_finetuning_validation_loss
+    label: "Compare validation losses collected during all ViTs finetuning"
+    attributes: []
+    inputs: 
+      - "finetuned_DoubleAttention_ViT"
+      - "finetuned_SEAttention_ViT"
+      # - "finetuned_SimAM_ViT"
+      # - "finetuned_MobileViTv2Attention_ViT"
+      # - "finetuned_CoordAtt_ViT"
+      # - "finetuned_CrissCrossAttention_ViT"
+      # - "finetuned_SKAttention_ViT"
+      # - "finetuned_ImageLinearAttention_ViT"
+    outputs:
+      - "validation_loss_finetuning"

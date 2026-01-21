@@ -1,0 +1,479 @@
+{
+  "prefix": {
+    "yProv4WFsLite": "yProv4WFsLite"
+  },
+  "activity": {
+    "yProv4WFsLite:pretrain_DoubleAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain DoubleAttention Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_SEAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain SEAttention Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_SimAM": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain SimAM Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_MobileViTv2Attention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain MobileViTv2Attention Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_CoordAtt": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain CoordAtt Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_CrissCrossAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain CrissCrossAttention Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_SKAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain SKAttention Vision Transformer"
+    },
+    "yProv4WFsLite:pretrain_ImageLinearAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Pretrain ImageLinearAttention Vision Transformer"
+    },
+    "yProv4WFsLite:compare_pretrain_energy": {
+      "prov:label": "Compare energy consumed during all ViTs pretraining"
+    },
+    "yProv4WFsLite:compare_pretrain_time": {
+      "prov:label": "Compare time taken during all ViTs pretraining"
+    },
+    "yProv4WFsLite:compare_pretrain_validation_loss": {
+      "prov:label": "Compare validation losses collecred during all ViTs pretraining"
+    },
+    "yProv4WFsLite:finetune_DoubleAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning DoubleAttention Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_SEAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning SEAttention Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_SimAM": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning SimAM Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_MobileViTv2Attention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning MobileViTv2Attention Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_CoordAtt": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning CoordAtt Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_CrissCrossAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning CrissCrossAttention Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_SKAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning SKAttention Vision Transformer"
+    },
+    "yProv4WFsLite:finetune_ImageLinearAttention": {
+      "yProv4WFsLite:context": "training",
+      "prov:label": "Finetuning ImageLinearAttention Vision Transformer"
+    },
+    "yProv4WFsLite:compare_finetuning_energy": {
+      "prov:label": "Compare energy consumed during all ViTs finetuning"
+    },
+    "yProv4WFsLite:compare_finetuning_time": {
+      "prov:label": "Compare time taken during all ViTs finetuning"
+    },
+    "yProv4WFsLite:compare_finetuning_validation_loss": {
+      "prov:label": "Compare validation losses collected during all ViTs finetuning"
+    }
+  },
+  "entity": {
+    "yProv4WFsLite:pretrained_DoubleAttention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_DoubleAttention_ViT"
+    },
+    "yProv4WFsLite:pretrained_SEAttention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_SEAttention_ViT"
+    },
+    "yProv4WFsLite:pretrained_SimAM_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_SimAM_ViT"
+    },
+    "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT"
+    },
+    "yProv4WFsLite:pretrained_CoordAtt_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_CoordAtt_ViT"
+    },
+    "yProv4WFsLite:pretrained_CrissCrossAttention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT"
+    },
+    "yProv4WFsLite:pretrained_SKAttention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_SKAttention_ViT"
+    },
+    "yProv4WFsLite:pretrained_ImageLinearAttention_ViT": {
+      "prov:label": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT"
+    },
+    "yProv4WFsLite:pretrain_energy": {
+      "prov:label": "yProv4WFsLite:pretrain_energy",
+      "prov:src": "imgs/energy_pretraining.png"
+    },
+    "yProv4WFsLite:pretrain_time": {
+      "prov:label": "yProv4WFsLite:pretrain_time",
+      "prov:src": "imgs/time_pretraining.png"
+    },
+    "yProv4WFsLite:validation_loss_pretraining": {
+      "prov:label": "yProv4WFsLite:validation_loss_pretraining",
+      "prov:src": "imgs/validation_loss_pretraining.png"
+    },
+    "yProv4WFsLite:finetuned_DoubleAttention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_DoubleAttention_ViT"
+    },
+    "yProv4WFsLite:finetuned_SEAttention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_SEAttention_ViT"
+    },
+    "yProv4WFsLite:finetuned_SimAM_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_SimAM_ViT"
+    },
+    "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT"
+    },
+    "yProv4WFsLite:finetuned_CoordAtt_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_CoordAtt_ViT"
+    },
+    "yProv4WFsLite:finetuned_CrissCrossAttention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_CrissCrossAttention_ViT"
+    },
+    "yProv4WFsLite:finetuned_SKAttention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_SKAttention_ViT"
+    },
+    "yProv4WFsLite:finetuned_ImageLinearAttention_ViT": {
+      "prov:label": "yProv4WFsLite:finetuned_ImageLinearAttention_ViT"
+    },
+    "yProv4WFsLite:finetuning_energy": {
+      "prov:label": "yProv4WFsLite:finetuning_energy",
+      "prov:src": "imgs/energy_finetuning.png"
+    },
+    "yProv4WFsLite:finetuning_time": {
+      "prov:label": "yProv4WFsLite:finetuning_time",
+      "prov:src": "imgs/time_finetuning.png"
+    },
+    "yProv4WFsLite:validation_loss_finetuning": {
+      "prov:label": "yProv4WFsLite:validation_loss_finetuning",
+      "prov:src": "imgs/validation_loss_finetuning.png"
+    }
+  },
+  "wasGeneratedBy": {
+    "_:id1": {
+      "prov:entity": "yProv4WFsLite:pretrained_DoubleAttention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_DoubleAttention"
+    },
+    "_:id2": {
+      "prov:entity": "yProv4WFsLite:pretrained_SEAttention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_SEAttention"
+    },
+    "_:id3": {
+      "prov:entity": "yProv4WFsLite:pretrained_SimAM_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_SimAM"
+    },
+    "_:id4": {
+      "prov:entity": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_MobileViTv2Attention"
+    },
+    "_:id5": {
+      "prov:entity": "yProv4WFsLite:pretrained_CoordAtt_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_CoordAtt"
+    },
+    "_:id6": {
+      "prov:entity": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_CrissCrossAttention"
+    },
+    "_:id7": {
+      "prov:entity": "yProv4WFsLite:pretrained_SKAttention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_SKAttention"
+    },
+    "_:id8": {
+      "prov:entity": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT",
+      "prov:activity": "yProv4WFsLite:pretrain_ImageLinearAttention"
+    },
+    "_:id17": {
+      "prov:entity": "yProv4WFsLite:pretrain_energy",
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy"
+    },
+    "_:id26": {
+      "prov:entity": "yProv4WFsLite:pretrain_time",
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time"
+    },
+    "_:id35": {
+      "prov:entity": "yProv4WFsLite:validation_loss_pretraining",
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss"
+    },
+    "_:id37": {
+      "prov:entity": "yProv4WFsLite:finetuned_DoubleAttention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_DoubleAttention"
+    },
+    "_:id39": {
+      "prov:entity": "yProv4WFsLite:finetuned_SEAttention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_SEAttention"
+    },
+    "_:id41": {
+      "prov:entity": "yProv4WFsLite:finetuned_SimAM_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_SimAM"
+    },
+    "_:id43": {
+      "prov:entity": "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_MobileViTv2Attention"
+    },
+    "_:id45": {
+      "prov:entity": "yProv4WFsLite:finetuned_CoordAtt_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_CoordAtt"
+    },
+    "_:id47": {
+      "prov:entity": "yProv4WFsLite:finetuned_CrissCrossAttention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_CrissCrossAttention"
+    },
+    "_:id49": {
+      "prov:entity": "yProv4WFsLite:finetuned_SKAttention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_SKAttention"
+    },
+    "_:id51": {
+      "prov:entity": "yProv4WFsLite:finetuned_ImageLinearAttention_ViT",
+      "prov:activity": "yProv4WFsLite:finetune_ImageLinearAttention"
+    },
+    "_:id60": {
+      "prov:entity": "yProv4WFsLite:finetuning_energy",
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy"
+    },
+    "_:id69": {
+      "prov:entity": "yProv4WFsLite:finetuning_time",
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time"
+    },
+    "_:id78": {
+      "prov:entity": "yProv4WFsLite:validation_loss_finetuning",
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss"
+    }
+  },
+  "used": {
+    "_:id9": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_DoubleAttention_ViT"
+    },
+    "_:id10": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_SEAttention_ViT"
+    },
+    "_:id11": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_SimAM_ViT"
+    },
+    "_:id12": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT"
+    },
+    "_:id13": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_CoordAtt_ViT"
+    },
+    "_:id14": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT"
+    },
+    "_:id15": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_SKAttention_ViT"
+    },
+    "_:id16": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_energy",
+      "prov:entity": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT"
+    },
+    "_:id18": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_DoubleAttention_ViT"
+    },
+    "_:id19": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_SEAttention_ViT"
+    },
+    "_:id20": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_SimAM_ViT"
+    },
+    "_:id21": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT"
+    },
+    "_:id22": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_CoordAtt_ViT"
+    },
+    "_:id23": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT"
+    },
+    "_:id24": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_SKAttention_ViT"
+    },
+    "_:id25": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_time",
+      "prov:entity": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT"
+    },
+    "_:id27": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_DoubleAttention_ViT"
+    },
+    "_:id28": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_SEAttention_ViT"
+    },
+    "_:id29": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_SimAM_ViT"
+    },
+    "_:id30": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT"
+    },
+    "_:id31": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_CoordAtt_ViT"
+    },
+    "_:id32": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT"
+    },
+    "_:id33": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_SKAttention_ViT"
+    },
+    "_:id34": {
+      "prov:activity": "yProv4WFsLite:compare_pretrain_validation_loss",
+      "prov:entity": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT"
+    },
+    "_:id36": {
+      "prov:activity": "yProv4WFsLite:finetune_DoubleAttention",
+      "prov:entity": "yProv4WFsLite:pretrained_DoubleAttention_ViT"
+    },
+    "_:id38": {
+      "prov:activity": "yProv4WFsLite:finetune_SEAttention",
+      "prov:entity": "yProv4WFsLite:pretrained_SEAttention_ViT"
+    },
+    "_:id40": {
+      "prov:activity": "yProv4WFsLite:finetune_SimAM",
+      "prov:entity": "yProv4WFsLite:pretrained_SimAM_ViT"
+    },
+    "_:id42": {
+      "prov:activity": "yProv4WFsLite:finetune_MobileViTv2Attention",
+      "prov:entity": "yProv4WFsLite:pretrained_MobileViTv2Attention_ViT"
+    },
+    "_:id44": {
+      "prov:activity": "yProv4WFsLite:finetune_CoordAtt",
+      "prov:entity": "yProv4WFsLite:pretrained_CoordAtt_ViT"
+    },
+    "_:id46": {
+      "prov:activity": "yProv4WFsLite:finetune_CrissCrossAttention",
+      "prov:entity": "yProv4WFsLite:pretrained_CrissCrossAttention_ViT"
+    },
+    "_:id48": {
+      "prov:activity": "yProv4WFsLite:finetune_SKAttention",
+      "prov:entity": "yProv4WFsLite:pretrained_SKAttention_ViT"
+    },
+    "_:id50": {
+      "prov:activity": "yProv4WFsLite:finetune_ImageLinearAttention",
+      "prov:entity": "yProv4WFsLite:pretrained_ImageLinearAttention_ViT"
+    },
+    "_:id52": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_DoubleAttention_ViT"
+    },
+    "_:id53": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_SEAttention_ViT"
+    },
+    "_:id54": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_SimAM_ViT"
+    },
+    "_:id55": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT"
+    },
+    "_:id56": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_CoordAtt_ViT"
+    },
+    "_:id57": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_CrissCrossAttention_ViT"
+    },
+    "_:id58": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_SKAttention_ViT"
+    },
+    "_:id59": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_energy",
+      "prov:entity": "yProv4WFsLite:finetuned_ImageLinearAttention_ViT"
+    },
+    "_:id61": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_DoubleAttention_ViT"
+    },
+    "_:id62": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_SEAttention_ViT"
+    },
+    "_:id63": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_SimAM_ViT"
+    },
+    "_:id64": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT"
+    },
+    "_:id65": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_CoordAtt_ViT"
+    },
+    "_:id66": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_CrissCrossAttention_ViT"
+    },
+    "_:id67": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_SKAttention_ViT"
+    },
+    "_:id68": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_time",
+      "prov:entity": "yProv4WFsLite:finetuned_ImageLinearAttention_ViT"
+    },
+    "_:id70": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_DoubleAttention_ViT"
+    },
+    "_:id71": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_SEAttention_ViT"
+    },
+    "_:id72": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_SimAM_ViT"
+    },
+    "_:id73": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_MobileViTv2Attention_ViT"
+    },
+    "_:id74": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_CoordAtt_ViT"
+    },
+    "_:id75": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_CrissCrossAttention_ViT"
+    },
+    "_:id76": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_SKAttention_ViT"
+    },
+    "_:id77": {
+      "prov:activity": "yProv4WFsLite:compare_finetuning_validation_loss",
+      "prov:entity": "yProv4WFsLite:finetuned_ImageLinearAttention_ViT"
+    }
+  }
+}
